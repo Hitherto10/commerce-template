@@ -7,7 +7,7 @@ async function signUpUser(){
             email: 'kcda4468@gmail.com',
             password: '12345678',
         }
-        const response = await axios.post('http://localhost:3000/api/signUpUser', payload)
+        const response = await axios.post('http://localhost:3000/api/createUser', payload)
 
         console.log(response.data.message);
     }
@@ -15,6 +15,3 @@ async function signUpUser(){
         console.log(error);
     }
 }
-
-
-signUpUser();
